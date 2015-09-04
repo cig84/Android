@@ -8,34 +8,84 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.miprimeraapp.MainActivity" >
 
-    <LinearLayout
+    <GridLayout
+        android:id="@+id/gridLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
-        android:orientation="vertical" >
+        android:columnCount="1" >
 
         <EditText
             android:id="@+id/editText1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10" >
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="20dp"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:text="@string/premi" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="0"
+            android:layout_gravity="right|top"
+            android:layout_row="1"
+            android:text="@string/ripremi" />
+
+        <Chronometer
+            android:id="@+id/chronometer1"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:text="Chronometer" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/psw"
+            android:layout_gravity="fill_horizontal"
+            android:ems="10"
+            android:inputType="textPassword" >
 
             <requestFocus />
         </EditText>
 
         <Button
-            android:id="@+id/button1"
-            android:layout_width="273dp"
-            android:layout_height="wrap_content"
-            android:text="@string/premi" />
+            android:id="@+id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="6"
+            android:onClick="registra"
+            android:text="@string/registra" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Me la chupa!" />
-    </LinearLayout>
+    </GridLayout>
 
 </RelativeLayout>
