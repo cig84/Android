@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiPrimeraApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="action_as">AS Webpage</string>
+    <string name="action_marca">Marca Webpage</string>
+    <string name="action_reloj">Watch</string><string name="action_close">Close</string>
+    <string name="premi">Start</string>
+    <string name="ripremi">Stop</string>
+    <string name="inizia">Go!!!</string>
+    <string name="ferma">Done!!!</string>
+    <string name="registra">Register</string>
+    <string name="save">Save</string>
+    
+
+</resources>
