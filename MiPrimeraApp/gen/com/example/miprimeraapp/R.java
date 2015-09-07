@@ -27,19 +27,20 @@ public final class R {
     public static final class id {
         public static final int RelativeLayout1=0x7f09000f;
         public static final int action_as=0x7f090019;
-        public static final int action_close=0x7f09001c;
+        public static final int action_close=0x7f09001d;
+        public static final int action_database=0x7f09001c;
         public static final int action_marca=0x7f090018;
         public static final int action_reloj=0x7f09001a;
         public static final int action_settings=0x7f090017;
         public static final int action_toast=0x7f09001b;
         public static final int analogClock1=0x7f09000b;
-        public static final int button1=0x7f090002;
-        public static final int button2=0x7f090003;
+        public static final int button1=0x7f090001;
+        public static final int button2=0x7f090004;
         public static final int button3=0x7f090009;
-        public static final int chronometer1=0x7f090004;
+        public static final int chronometer1=0x7f090005;
         public static final int data=0x7f090011;
         public static final int fecha=0x7f090007;
-        public static final int gridLayout1=0x7f090001;
+        public static final int gridLayout1=0x7f090003;
         public static final int imageView1=0x7f090015;
         public static final int layoutNoti=0x7f090014;
         public static final int linearLayout1=0x7f09000a;
@@ -50,10 +51,10 @@ public final class R {
         public static final int psw=0x7f090008;
         public static final int tempo=0x7f090013;
         public static final int textView1=0x7f09000c;
-        public static final int textView2=0x7f090005;
+        public static final int textView2=0x7f090000;
         public static final int textView3=0x7f09000d;
         public static final int textView4=0x7f09000e;
-        public static final int txtregistro=0x7f090000;
+        public static final int txtregistro=0x7f090002;
     }
     public static final class layout {
         public static final int activity_dbins=0x7f040000;
@@ -77,6 +78,7 @@ public final class R {
     public static final class string {
         public static final int action_as=0x7f060003;
         public static final int action_close=0x7f060006;
+        public static final int action_database=0x7f06000d;
         public static final int action_marca=0x7f060004;
         public static final int action_reloj=0x7f060005;
         public static final int action_settings=0x7f060002;
@@ -88,11 +90,9 @@ public final class R {
         public static final int registra=0x7f06000b;
         public static final int ripremi=0x7f060008;
         public static final int salva=0x7f06000c;
-        public static final int save=0x7f060011;
-        public static final int title_activity_db=0x7f06000e;
-        public static final int title_activity_dbins=0x7f060010;
-        public static final int title_activity_dbsel=0x7f06000f;
-        public static final int title_activity_toast=0x7f06000d;
+        public static final int save=0x7f060010;
+        public static final int title_activity_dbins=0x7f06000f;
+        public static final int title_activity_dbsel=0x7f06000e;
     }
     public static final class style {
         /** 

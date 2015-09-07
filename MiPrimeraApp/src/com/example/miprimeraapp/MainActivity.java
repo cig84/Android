@@ -83,6 +83,10 @@ public class MainActivity extends Activity {
 				Intent i4 = new Intent(this, ToastActivity.class);
 				startActivity(i4);
 				break;
+			case R.id.action_database:
+				Intent i5 = new Intent(this, DBinsActivity.class);
+				startActivity(i5);
+				break;
 				
 		}
 		return super.onOptionsItemSelected(item);

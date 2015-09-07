@@ -14,6 +14,9 @@
     <string name="ferma">Done!!!</string>
     <string name="registra">Register</string>
     <string name="save">Save</string>
+    <string name="action_database">Database</string>
+    <string name="title_activity_dbsel">Database SELECT</string>
+    <string name="title_activity_dbins">Database INSERT</string>
     
 
 </resources>

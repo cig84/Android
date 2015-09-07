@@ -24,31 +24,16 @@
         </activity>
         <activity
             android:name=".RegistraActivity"
-            android:label="Second Activity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:label="Registra Activity" >
         </activity>
         <activity
             android:name=".RisultatoActivity"
-            android:label="Registra Activity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:label="Risultato Activity" >
         </activity>
         <activity
             android:name=".ToastActivity"
             android:label="Toast Activity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+           </activity>
         <activity
             android:name=".DBselActivity"
             android:label="@string/title_activity_dbsel" >

@@ -1,10 +1,12 @@
 package com.example.miprimeraapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class DBinsActivity extends Activity {
 
@@ -32,12 +34,19 @@ public class DBinsActivity extends Activity {
 			// Cerramos la base de datos
 			db.close();
 		}
+		
+	}
+	
+	public void mostraUtenti(View v){
+		
+		Intent i = new Intent(this, DBselActivity.class);
+		startActivity(i);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.dbins, menu);
+//		getMenuInflater().inflate(R.menu.dbins, menu);
 		return true;
 	}
 

@@ -32,7 +32,7 @@ public class DBselActivity extends Activity {
 			do {
 				String codigo = c.getString(0);
 				String nombre = c.getString(1);
-				datos.append("codigo y nombre ");
+				datos.append("Codigo y nombre: ");
 				datos.append(codigo + " " + nombre);
 				datos.append("\n");
 			} while (c.moveToNext());
