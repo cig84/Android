@@ -14,10 +14,23 @@
         android:id="@+id/action_as"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_as"/><item android:id="@+id/action_reloj" android:orderInCategory="100" android:showAsAction="never" android:title="@string/action_reloj" /><item 
+        android:title="@string/action_as"/><item 
+        android:id="@+id/action_reloj" 
+        android:orderInCategory="100" 
+        android:showAsAction="never" 
+        android:title="@string/action_reloj" /><item 
+        android:id="@+id/action_toast" 
+        android:title="Toast" 
+        android:orderInCategory="100" 
+        android:showAsAction="never"></item><item 
+        android:id="@+id/action_database" 
+        android:orderInCategory="100" 
+        android:showAsAction="never" 
+        android:title="@string/action_database" /><item 
         android:id="@+id/action_close" 
         android:orderInCategory="100" 
         android:showAsAction="never" 
         android:title="@string/action_close" />
+        
 
 </menu>

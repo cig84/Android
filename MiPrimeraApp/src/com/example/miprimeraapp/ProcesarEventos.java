@@ -1,7 +1,5 @@
 package com.example.miprimeraapp;
 
-import java.text.DecimalFormat;
-import java.util.concurrent.TimeUnit;
 
 import android.os.SystemClock;
 import android.view.View;

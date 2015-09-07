@@ -2,17 +2,15 @@ package com.example.miprimeraapp;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.renderscript.Sampler.Value;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class RegistraActivity extends Activity {
+public class OtraActivity extends Activity {
 	
 	private static TextView nombre;
 	private static TextView fecha;
 	private static TextView psw;
-	private static TextView tempo;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,14 +20,9 @@ public class RegistraActivity extends Activity {
 		nombre = (TextView)findViewById(R.id.textView1);
 		fecha = (TextView)findViewById(R.id.textView2);
 		psw = (TextView)findViewById(R.id.textView3);
-		tempo = (TextView)findViewById(R.id.textView4);
-		
-		String nome = getIntent().getExtras().getString("userNombre");
-		String tiempo = getIntent().getExtras().getString("userTempo");
-		nombre.setText(getIntent().getExtras().getString("userNombre"));
-		fecha.setText(getIntent().getExtras().getString("userFecha"));
-		psw.setText(getIntent().getExtras().getString("userPsw"));
-		tempo.setText(getIntent().getExtras().getString("userTempo"));
+		nombre.setText(getIntent().getExtras().getString("nombre"));
+		fecha.setText(getIntent().getExtras().getString("fecha"));
+		psw.setText(getIntent().getExtras().getString("psw"));
 	}
 	
 	@Override
@@ -52,7 +45,7 @@ public class RegistraActivity extends Activity {
 	}
 
 	public static void setNombre(TextView nombre) {
-		RegistraActivity.nombre = nombre;
+		OtraActivity.nombre = nombre;
 	}
 
 	public static TextView getFecha() {
@@ -60,7 +53,7 @@ public class RegistraActivity extends Activity {
 	}
 
 	public static void setFecha(TextView fecha) {
-		RegistraActivity.fecha = fecha;
+		OtraActivity.fecha = fecha;
 	}
 
 	public static TextView getPsw() {
@@ -68,15 +61,7 @@ public class RegistraActivity extends Activity {
 	}
 
 	public static void setPsw(TextView psw) {
-		RegistraActivity.psw = psw;
-	}
-
-	public static TextView getTempo() {
-		return tempo;
-	}
-
-	public static void setTempo(TextView tempo) {
-		RegistraActivity.tempo = tempo;
+		OtraActivity.psw = psw;
 	}
 	
 	

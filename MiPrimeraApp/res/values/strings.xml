@@ -4,15 +4,19 @@
     <string name="app_name">MiPrimeraApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Impostazioni</string>
-    
     <string name="action_as">Pagina web AS</string>
     <string name="action_marca">Pagina web Marca</string>
-    <string name="action_reloj">Orologio</string><string name="action_close">Chiudi</string>
+    <string name="action_reloj">Orologio</string>
+    <string name="action_close">Chiudi</string>
     <string name="premi">Inizia</string>
     <string name="ripremi">Ferma</string>
     <string name="inizia">Via!!!</string>
     <string name="ferma">Fatto!!!</string>
     <string name="registra">Registra</string>
     <string name="salva">Salva</string>
-    
+    <string name="title_activity_toast">ToastActivity</string>
+    <string name="title_activity_db">DBActivity</string>
+    <string name="title_activity_dbsel">DBselActivity</string>
+    <string name="title_activity_dbins">DBinsActivity</string>
+
 </resources>

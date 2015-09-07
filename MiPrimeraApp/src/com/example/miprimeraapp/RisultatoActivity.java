@@ -1,8 +1,10 @@
 package com.example.miprimeraapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcel;
+import android.view.View;
 import android.widget.TextView;
 
 public class RisultatoActivity extends Activity{
@@ -28,6 +30,24 @@ public class RisultatoActivity extends Activity{
 		psw.setText(getIntent().getExtras().getString("psw"));
 		tempo.setText(String.valueOf(MainActivity.getElapsedMillis()));
 		
+	}
+	
+	public void registra(View v) {
+		
+		usr = new Usuario();
+		usr.setNombre(getIntent().getExtras().getString("nombre"));
+		usr.setFecha(getIntent().getExtras().getString("fecha"));
+		usr.setPsw(getIntent().getExtras().getString("psw"));
+		usr.setTempo(MainActivity.getElapsedMillis()); 
+		
+		Intent i = new Intent(this, RegistraActivity.class);
+		
+		i.putExtra("usrNombre", usr.getNombre());
+		i.putExtra("usrFecha", usr.getFecha());
+		i.putExtra("usrPsw", usr.getPsw());
+		i.putExtra("usrTempo", usr.getTempo());
+		
+		startActivity(i);
 		
 	}
 

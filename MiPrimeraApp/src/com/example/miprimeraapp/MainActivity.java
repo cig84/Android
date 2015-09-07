@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,7 +39,6 @@ public class MainActivity extends Activity {
 		
 		
 	}
-	
 	
 
 	@Override
@@ -79,6 +77,11 @@ public class MainActivity extends Activity {
 			case R.id.action_reloj:
 				Intent i3 = new Intent(this, RegistraActivity.class);
 				startActivity(i3);
+				break;
+				
+			case R.id.action_toast:
+				Intent i4 = new Intent(this, ToastActivity.class);
+				startActivity(i4);
 				break;
 				
 		}

@@ -8,7 +8,7 @@ public class Usuario implements Parcelable{
 	private String nombre;
 	private String fecha;
 	private String psw;
-	private long tempo;
+	private double tempo;
 	
 
 	public static final Parcelable.Creator<Usuario> CREATOR = new Parcelable.Creator<Usuario>() {
@@ -35,7 +35,7 @@ public class Usuario implements Parcelable{
         out.writeString(nombre);
         out.writeString(fecha);
         out.writeString(psw);
-        out.writeLong(tempo);
+        out.writeDouble(tempo);
     }
 
     public void readFromParcel(Parcel in) {
@@ -76,10 +76,10 @@ public class Usuario implements Parcelable{
 	public void setPsw(String psw) {
 		this.psw = psw;
 	}
-	public long getTempo() {
+	public double getTempo() {
 		return tempo;
 	}
-	public void setTempo(long tempo) {
+	public void setTempo(double tempo) {
 		this.tempo = tempo;
 	}
 
