@@ -10,6 +10,16 @@ public class Usuario implements Parcelable{
 	private String psw;
 	private double tempo;
 	
+	public Usuario(){
+		
+	}
+	
+	public Usuario(String nombre, String fecha, String psw, double tempo) {
+		this.nombre = nombre;
+		this.fecha = fecha;
+		this.psw = psw;
+		this.tempo = tempo;
+	}
 
 	public static final Parcelable.Creator<Usuario> CREATOR = new Parcelable.Creator<Usuario>() {
 		
@@ -23,26 +33,15 @@ public class Usuario implements Parcelable{
 		}
 	};
 	
-	public Usuario(){
-		
-	}
-	
 	private Usuario(Parcel in) {
         readFromParcel(in);
-    }
-	
-	public void writeToParcel(Parcel out) {
-        out.writeString(nombre);
-        out.writeString(fecha);
-        out.writeString(psw);
-        out.writeDouble(tempo);
     }
 
     public void readFromParcel(Parcel in) {
         nombre = in.readString();
         fecha = in.readString();
         psw = in.readString();
-        tempo = in.readLong();
+        tempo = in.readDouble();
     }
 	
 
@@ -54,7 +53,10 @@ public class Usuario implements Parcelable{
 
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
-		// TODO Auto-generated method stub
+		dest.writeString(nombre);
+        dest.writeString(fecha);
+        dest.writeString(psw);
+        dest.writeDouble(tempo);
 		
 	}
 

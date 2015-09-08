@@ -34,18 +34,21 @@ public class RisultatoActivity extends Activity{
 	
 	public void registra(View v) {
 		
-		usr = new Usuario();
-		usr.setNombre(getIntent().getExtras().getString("nombre"));
-		usr.setFecha(getIntent().getExtras().getString("fecha"));
-		usr.setPsw(getIntent().getExtras().getString("psw"));
-		usr.setTempo(MainActivity.getElapsedMillis()); 
+		Usuario usrL = new Usuario(getIntent().getExtras().getString("nombre"), getIntent().getExtras().getString("fecha"), getIntent().getExtras().getString("psw"), MainActivity.getElapsedMillis());
+		usr = new Usuario(getIntent().getExtras().getString("nombre"), getIntent().getExtras().getString("fecha"), getIntent().getExtras().getString("psw"), MainActivity.getElapsedMillis());
+//		usr.setNombre(getIntent().getExtras().getString("nombre"));
+//		usr.setFecha(getIntent().getExtras().getString("fecha"));
+//		usr.setPsw(getIntent().getExtras().getString("psw"));
+//		usr.setTempo(MainActivity.getElapsedMillis()); 
 		
-		Intent i = new Intent(this, RegistraActivity.class);
+		Intent i = new Intent(this, DBinsActivity.class);
 		
-		i.putExtra("usrNombre", usr.getNombre());
-		i.putExtra("usrFecha", usr.getFecha());
-		i.putExtra("usrPsw", usr.getPsw());
-		i.putExtra("usrTempo", usr.getTempo());
+//		i.putExtra("userNombre", usr.getNombre());
+//		i.putExtra("userFecha", usr.getFecha());
+//		i.putExtra("userPsw", usr.getPsw());
+//		i.putExtra("userTempo", usr.getTempo());
+		i.putExtra("user", usr);
+		i.putExtra("userL", usrL);
 		
 		startActivity(i);
 		

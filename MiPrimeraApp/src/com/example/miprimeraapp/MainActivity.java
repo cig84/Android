@@ -28,6 +28,12 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		AsyncTaskGet myGet = new AsyncTaskGet();
+		myGet.execute(null, null, null);
+		
+		AsyncTaskPost myPost = new AsyncTaskPost();
+		myPost.execute(null, null, null);
+		
 		muestra = (TextView) findViewById(R.id.textView2);
 		chronometer = (Chronometer) findViewById(R.id.chronometer1);
 		pulsanteFerma = (Button) findViewById(R.id.button2);

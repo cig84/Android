@@ -2,7 +2,6 @@ package com.example.miprimeraapp;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.renderscript.Sampler.Value;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -23,9 +22,7 @@ public class RegistraActivity extends Activity {
 		fecha = (TextView)findViewById(R.id.textView2);
 		psw = (TextView)findViewById(R.id.textView3);
 		tempo = (TextView)findViewById(R.id.textView4);
-		
-		String nome = getIntent().getExtras().getString("userNombre");
-		String tiempo = getIntent().getExtras().getString("userTempo");
+	
 		nombre.setText(getIntent().getExtras().getString("userNombre"));
 		fecha.setText(getIntent().getExtras().getString("userFecha"));
 		psw.setText(getIntent().getExtras().getString("userPsw"));

@@ -17,6 +17,7 @@ public class DBselActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_dbsel);
+		
 		txtcontactos = (TextView) findViewById(R.id.txtregistro);
 		BaseDatos usdbh = new BaseDatos(this, "DBUsuarios", null, 1);
 
@@ -30,10 +31,10 @@ public class DBselActivity extends Activity {
 		if (c.moveToFirst()) {
 			// Recorremos el cursor hasta que no haya más registros
 			do {
-				String codigo = c.getString(0);
-				String nombre = c.getString(1);
-				datos.append("Codigo y nombre: ");
-				datos.append(codigo + " " + nombre);
+				String nombre = c.getString(0);
+				String tiempo = c.getString(1);
+				datos.append("Nombre y tiempo: ");
+				datos.append(nombre + " " + tiempo);
 				datos.append("\n");
 			} while (c.moveToNext());
 		}

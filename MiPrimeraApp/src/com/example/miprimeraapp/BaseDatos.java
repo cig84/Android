@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class BaseDatos extends SQLiteOpenHelper {
 	
-	String SQLscript = "CREATE TABLE Usuarios (codigo INTEGER, nombre TEXT)";
+	String SQLscript = "CREATE TABLE Usuarios (nombre TEXT, tiempo REAL)";
 	
 	public BaseDatos(Context context, String name, CursorFactory factory,
 			int version) {
